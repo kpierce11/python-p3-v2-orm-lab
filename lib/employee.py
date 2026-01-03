@@ -186,7 +186,7 @@ class Employee:
         return cls.instance_from_db(row) if row else None
 
     def reviews(self):
-        return review import Review
+        from review import Review
         sql = """
             SELECT *
             FROM reviews
